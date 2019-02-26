@@ -13,7 +13,7 @@ Hello Laura
 Good Bye Jim
 */
 
-(function () {
+(function (window) {
 
   var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
@@ -26,4 +26,4 @@ Good Bye Jim
     }
   }
 
-})();
+})(window);
