@@ -1,37 +1,30 @@
 body {
   font-size: 16px;
-  color: solid black;
-  font-family: 'Times New Roman', sans-serif;
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
 }
 
-/********** Header **********/
+/** HEADER **/
 #header-nav {
-  background-color: #61122f;
+  background-color: beige;
   border-radius: 0;
-  height: 84px;
   border: 0;
 }
 .navbar-brand {
   padding-top: 25px;
-  padding-bottom: 25px;
 }
-.navbar-brand h1 {
-  font-size: 2.0em;
-  font-weight: bolder;
-  color: lightgray;
+/* Food LLC Name */
+.navbar-brand h1 { 
+  font-family: 'Times New Roman', serif;
+  color: brown;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
   margin-top: 0;
   margin-bottom: 0;
+  line-height: .75;
 }
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-.navbar-brand p {
-  color: #000;
-  text-transform: uppercase;
-  font-size: .7em;
-  margin-top: 15px;
-}
-
 
 #nav-list {
   margin-top: 10px;
@@ -39,113 +32,86 @@ body {
 #nav-list a {
   color: #951C49;
   text-align: center;
-  font-size: 1.8em;
 }
 #nav-list a:hover {
   background: #E7E7E7;
 }
-
 #nav-list a span {
   font-size: 1.8em;
 }
-
-
-
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid black;
+  border: 1px solid beige;
+  background-color: #0B0B3B;
 }
-
 .navbar-header button.navbar-toggle {
   clear: both;
   margin-top: -30px;
 }
+/* END HEADER */
 
-/********** End of Header **********/
-
-
-/********** Home Page **********/
-#ourMenu-Title h2{
+/* HOME PAGE */
+.container .ourMenu {
   color: brown;
-  font-size: 1.8em;
-  font-weight: bold;
-  margin: 0;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  padding: 5px; 
 }
+
 #menu-chicken, #menu-beef, #menu-sushi {
-  box-shadow: 0 1px 5px 1px #cccccc;
-  background-color: black; 
-}
-#menuTitle h3 {
-  color: #465296;
-  text-align: center;
-  align-content: center;
-  padding: 5px;
-  margin: 0;
-}
-
-.chickenFood p, .beefFood p, .sushiFood p {
-  color: #BCAC8B;
+  width: 100%;
   margin: 10px;
-  padding: 0px 10px 20px 10px;
+  position: relative;
+  background-color: #D8D8D8;
+  overflow: hidden;
 }
 
-/********** End of Home Page **********/
+#chickenTitle, #menu-beef, #menu-sushi {
+  background-position: center;
+}
+#chickenTitle span, #beefTitle span, #sushiTitle span {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  color: black;
+}
+.chickenFood {
+  color: black;
+  margin-top: 30px;
+  padding: 10px 10px 10px;
+}
 
-/********** Desktop and Tablet Mockup **********/
+/* END HOME PAGE */
+
+/********** Desktop **********/
 @media (min-width: 1200px) {
-  .row {
-    padding: 0px;
-    
-  }
-}
-
-/********** Device Mockup **********/
-@media (max-width: 991px)  {
-/*  .navbar-brand {
-    padding-top: 10px;
-    height: 80px;
-  }
-  #menu-tile, #specials-tile {
-    width: 360px;
-    margin: 0 auto 15px;
+  #header-nav {
+    height: 86px 
   }
   .navbar-brand h1 {
-    padding-top: 10px;
-    font-size: 5vw;
+    font-size: 2.3em;
   }
-  .navbar-brand p {
-    font-size: .6em;
-    margin-top: 12px;
-  }
-  .navbar-brand p img {
-    height: 20px;
-  }
-  #collapsable-nav a { 
-    font-size: 1.2em;
-  }
-  #collapsable-nav a span {
-    font-size: 1em;
-    margin-right: 5px;
-  }*/
-  /*.col-xxs-12 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    float: left;
-    width: 100%;
-  }*/
+}
 
-} 
+/********** Tablet **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
 
-
-#main-content > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
+  #header-nav {
+    height: 80px 
   }
+  .navbar-brand h1 {
+    font-size: 2.0em;
+  }
+  /* End Header */
+}
+
+/********** Mobile **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  #header-nav {
+    height: 60px 
+  }
+  .navbar-brand h1 {
+    font-size: 1.0em;
+  }
+}
