@@ -1,0 +1,151 @@
+body {
+  font-size: 16px;
+  color: solid black;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+/********** Header **********/
+#header-nav {
+  background-color: #61122f;
+  border-radius: 0;
+  height: 84px;
+  border: 0;
+}
+.navbar-brand {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.navbar-brand h1 {
+  font-size: 2.0em;
+  font-weight: bolder;
+  color: lightgray;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p {
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+  font-size: 1.8em;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+
+/********** End of Header **********/
+
+
+/********** Home Page **********/
+#ourMenu-Title h2{
+  color: brown;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+#menu-chicken, #menu-beef, #menu-sushi {
+  box-shadow: 0 1px 5px 1px #cccccc;
+  background-color: black; 
+}
+#menuTitle h3 {
+  color: #465296;
+  text-align: center;
+  align-content: center;
+  padding: 5px;
+  margin: 0;
+}
+
+.chickenFood p, .beefFood p, .sushiFood p {
+  color: #BCAC8B;
+  margin: 10px;
+  padding: 0px 10px 20px 10px;
+}
+
+/********** End of Home Page **********/
+
+/********** Desktop and Tablet Mockup **********/
+@media (min-width: 1200px) {
+  .row {
+    padding: 0px;
+    
+  }
+}
+
+/********** Device Mockup **********/
+@media (max-width: 991px)  {
+/*  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+  .navbar-brand p {
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img {
+    height: 20px;
+  }
+  #collapsable-nav a { 
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span {
+    font-size: 1em;
+    margin-right: 5px;
+  }*/
+  /*.col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }*/
+
+} 
+
+
+#main-content > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
