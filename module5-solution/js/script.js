@@ -84,7 +84,8 @@ showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
   /*function (responseText) {*/
-  function(buildAndShowCategoriesHTML)
+ /* function(buildAndShowCategoriesHTML)*/
+  function(buildAndShowHomeHTML)	
       document.querySelector('#main-content').innerHTML = responseText;
   },
    // ***** <---- TODO: STEP 1: Substitute [...] ******
