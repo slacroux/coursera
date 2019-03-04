@@ -83,9 +83,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  function(buildAndShowCategoriesHTML) { document.querySelector("#main-content").innerHTML = buildAndShowCategoriesHTML;
-  },
-   // ***** <---- TODO: STEP 1: Substitute [...] ******
+  function(responseText) {
+	  document.querySelector("#main-content").innerHTML = responseText;
+  },// ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitely setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
@@ -115,7 +115,8 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHTML, "randomCategoryShortName", "'" + chosenCategoryShortName.short_name + "'"); 
+      var homeHtmlToInsertIntoMainPage = 
+	  insertProperty(homeHTML, "randomCategoryShortName", "'" + chosenCategoryShortName.short_name + "'"); 
 
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
@@ -129,7 +130,14 @@ function buildAndShowHomeHTML (categories) {
 
 
 // Given array of category objects, returns a random category object.
-function chooseRandomCategory (categories) {
+function 
+	
+	
+	
+	
+	
+	
+	(categories) {
   // Choose a random index into the array (from 0 inclusively until array length (exclusively))
   var randomArrayIndex = Math.floor(Math.random() * categories.length);
 
