@@ -103,14 +103,14 @@ function buildAndShowHomeHTML (categories) {
   $ajaxUtils.sendGetRequest(
     homeHtmlUrl,
     function (homeHtml) {
-      $ajaxUtils.sendGetRequest(
+      /*$ajaxUtils.sendGetRequest(
         homeUrl,
         function (homeUrl) {
           switchMenuToActive();
           var categoriesViewHtml = buildHomeViewHtml(categories, homeHtml, homeUrl);
           insertHtml("#main-content", categoriesViewHtml);
         },
-        false);
+        false);*/
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
